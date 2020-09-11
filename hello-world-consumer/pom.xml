@@ -9,10 +9,10 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>hello-dubbo-consumer</artifactId>
+	<artifactId>hello-world-consumer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>hello-dubbo-consumer</name>
-	<description>Hello Dubbo Consumer</description>
+	<name>hello-world-consumer</name>
+	<description>Hello World Consumer</description>
 
 	<dependencies>
 		<dependency>

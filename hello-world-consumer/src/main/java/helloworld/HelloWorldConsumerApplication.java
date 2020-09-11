@@ -6,12 +6,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HelloDubboConsumerApplication {
+public class HelloWorldConsumerApplication {
 
-	private static final Logger LOGGER = LoggerFactory.getLogger(HelloDubboConsumerApplication.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(HelloWorldConsumerApplication.class);
 
 	public static void main(String[] args) {
-		SpringApplication.run(HelloDubboConsumerApplication.class, args);
+		SpringApplication.run(HelloWorldConsumerApplication.class, args);
 		LOGGER.info("ConsumerApplication start!");
 	}
 
