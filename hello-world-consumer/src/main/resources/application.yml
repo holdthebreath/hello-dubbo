@@ -2,9 +2,9 @@ server:
   port: 7000
 spring:
   application:
-    name: hello-dubbo-consumer
+    name: hello-world-consumer
 dubbo:
   application:
-    name: hello-dubbo-consumer
+    name: hello-world-consumer
   registry:
     address: zookeeper://127.0.0.1:2181
