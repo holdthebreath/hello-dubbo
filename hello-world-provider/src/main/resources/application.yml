@@ -2,10 +2,10 @@ server:
   port: 7777
 spring:
   application:
-    name: hello-dubbo-provider
+    name: hello-world-provider
 dubbo:
   application:
-    name: hello-dubbo-provider
+    name: hello-world-provider
   scan:
     base-packages: helloworld.service.impl
   registry:
