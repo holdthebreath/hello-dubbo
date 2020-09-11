@@ -7,7 +7,7 @@ dubbo:
   application:
     name: hello-dubbo-provider
   scan:
-    base-packages: hellodubbo.service.impl
+    base-packages: helloworld.service.impl
   registry:
     address: zookeeper://127.0.0.1:2181
   protocol:

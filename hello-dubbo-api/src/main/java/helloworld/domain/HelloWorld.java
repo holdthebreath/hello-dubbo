@@ -1,4 +1,4 @@
-package hellodubbo.domain;
+package helloworld.domain;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;

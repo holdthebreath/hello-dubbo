@@ -1,6 +1,6 @@
-package hellodubbo.service;
+package helloworld.service;
 
-import hellodubbo.domain.HelloWorld;
+import helloworld.domain.HelloWorld;
 
 /**
  * @ClassName HelloWorldService

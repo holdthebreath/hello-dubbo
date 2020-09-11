@@ -1,7 +1,7 @@
-package hellodubbo.web.controller;
+package helloworld.web.controller;
 
-import hellodubbo.domain.HelloWorld;
-import hellodubbo.service.HelloWorldService;
+import helloworld.domain.HelloWorld;
+import helloworld.service.HelloWorldService;
 import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,7 +1,7 @@
-package hellodubbo.service.impl;
+package helloworld.service.impl;
 
-import hellodubbo.domain.HelloWorld;
-import hellodubbo.service.HelloWorldService;
+import helloworld.domain.HelloWorld;
+import helloworld.service.HelloWorldService;
 import org.apache.dubbo.config.annotation.Service;
 
 import java.time.LocalDateTime;

@@ -8,10 +8,10 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>hello-dubbo-provider</artifactId>
+	<artifactId>hello-world-provider</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>hello-dubbo-provider</name>
-	<description>Hello Dubbo Provider</description>
+	<name>hello-world-provider</name>
+	<description>Hello World Provider</description>
 
 	<properties>
 		<java.version>1.8</java.version>

@@ -28,7 +28,7 @@
     <modules>
         <module>hello-dubbo-api</module>
         <module>hello-dubbo-consumer</module>
-        <module>hello-dubbo-provider</module>
+        <module>hello-world-provider</module>
     </modules>
 
     <dependencyManagement>
