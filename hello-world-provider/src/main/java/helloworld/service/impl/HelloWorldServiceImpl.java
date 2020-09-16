@@ -2,6 +2,7 @@ package helloworld.service.impl;
 
 import helloworld.domain.HelloWorld;
 import helloworld.service.HelloWorldService;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.dubbo.config.annotation.Service;
 
 import java.time.LocalDateTime;
@@ -13,6 +14,7 @@ import java.time.LocalDateTime;
  * @Date 2020/9/10 9:56 PM
  * @Version 1.0
  */
+@Slf4j
 @Service
 public class HelloWorldServiceImpl implements HelloWorldService {
     @Override
