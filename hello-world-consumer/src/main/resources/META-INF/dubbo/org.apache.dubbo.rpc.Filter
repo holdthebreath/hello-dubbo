@@ -1,0 +1,2 @@
+gCtrace=global.traceid.GlobalTraceConsumerFilter
+gPtrace=global.traceid.GlobalTraceProviderFilter
