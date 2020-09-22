@@ -24,10 +24,10 @@ public class GlobalTraceProviderFilter implements Filter {
     public Result invoke(Invoker<?> invoker, Invocation invocation) throws RpcException {
         String traceId = invocation.getAttachment(TRACE_ID);
         if (!StringUtils.isBlank(traceId)) {
+            MDC.put(TRACE_ID, traceId);
             log.info("服务端当前traceId:{}", traceId);
             RpcContext.getContext().setAttachment(TRACE_ID, traceId);
             TraceIdUtils.setTraceId(traceId);
-            MDC.put(TRACE_ID, traceId);
         } else {
             log.warn("服务端缺少traceId");
             RpcContext.getContext().setAttachment(TRACE_ID, TraceIdUtils.getRpcTraceId());
