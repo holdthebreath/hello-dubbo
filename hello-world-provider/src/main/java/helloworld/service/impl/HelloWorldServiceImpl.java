@@ -1,11 +1,15 @@
 package helloworld.service.impl;
 
 import helloworld.domain.HelloWorld;
+import helloworld.domain.User;
 import helloworld.service.HelloWorldService;
+import helloworld.dao.UserDaoMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.dubbo.config.annotation.Service;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 /**
  * @ClassName HelloWorldServiceImpl
@@ -17,8 +21,11 @@ import java.time.LocalDateTime;
 @Slf4j
 @Service
 public class HelloWorldServiceImpl implements HelloWorldService {
+    @Autowired
+    private UserDaoMapper userDaoMapper;
     @Override
     public HelloWorld getHelloWorld() {
-        return new HelloWorld("1", "Hello World Dubbo!", LocalDateTime.now());
+        List<User> allUser = userDaoMapper.getAllUser();
+        return new HelloWorld(allUser.get(0).getId(), allUser.get(0).getUserName(), LocalDateTime.now());
     }
 }
