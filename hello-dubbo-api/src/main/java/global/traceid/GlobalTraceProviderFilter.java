@@ -27,12 +27,11 @@ public class GlobalTraceProviderFilter implements Filter {
             MDC.put(TRACE_ID, traceId);
             log.info("服务端当前traceId:{}", traceId);
             RpcContext.getContext().setAttachment(TRACE_ID, traceId);
-            TraceIdUtils.setTraceId(traceId);
         } else {
             log.warn("服务端缺少traceId");
             RpcContext.getContext().setAttachment(TRACE_ID, TraceIdUtils.getRpcTraceId());
-            TraceIdUtils.setTraceId(traceId);
         }
+        TraceIdUtils.setTraceId(traceId);
         return invoker.invoke(invocation);
     }
 }

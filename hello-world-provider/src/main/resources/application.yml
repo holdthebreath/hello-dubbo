@@ -5,9 +5,11 @@ spring:
     name: hello-world-provider
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
+#    driver-class-name: org.apache.phoenix.jdbc.PhoenixDriver
     url: jdbc:mysql://localhost:8066/hello_dubbo?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+#    url: jdbc:phoenix:127.0.0.1:2181
     username: root
-    password: XXXXXXX
+    password: XXXXXXXX
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
       initial-size: 5
@@ -37,7 +39,7 @@ spring:
           enabled: true
           db-type: mysql
           config:
-            delete-allow: false
+            delete-allow: true
             drop-table-allow: false
             multi-statement-allow: true
 #     配置StatFilter
@@ -54,7 +56,7 @@ spring:
       stat-view-servlet:
         url-pattern: /druid/*
         login-username: root
-        login-password: XXXXXXX
+        login-password: XXXXXXXX
         allow: 127.0.0.1
         enabled: true
         reset-enable: true
@@ -68,6 +70,8 @@ dubbo:
   protocol:
     name: dubbo
     port: 20880
+  provider:
+    timeout: 100000
 mybatis:
   configuration:
     map-underscore-to-camel-case: true

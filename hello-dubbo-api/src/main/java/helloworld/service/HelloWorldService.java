@@ -10,5 +10,17 @@ import helloworld.domain.HelloWorld;
  * @Version 1.0
  */
 public interface HelloWorldService {
-    HelloWorld getHelloWorld();
+    HelloWorld batchInsertTest();
+
+    HelloWorld selectTest();
+
+    HelloWorld selectUserById(String id);
+
+    HelloWorld updateTest();
+
+    HelloWorld updateUserById(String id);
+
+    HelloWorld deleteTest();
+
+    HelloWorld deleteUserById(String id);
 }
