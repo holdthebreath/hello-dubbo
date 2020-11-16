@@ -112,7 +112,7 @@
             <MaxFileSize>${log.maxSize}</MaxFileSize>
         </rollingPolicy>
         <encoder>
-            <pattern>%d{yyyy-MM-dd'T'HH:mm:ss.SSS'Z',GMT+8} [%-5level] %logger - %msg%n</pattern>
+            <pattern>%d{yyyy-MM-dd'T'HH:mm:ss.SSS'Z',GMT+8}|%-5level|%logger|%X{traceId}|%msg%n</pattern>
         </encoder>
     </appender>
 
